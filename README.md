@@ -39,7 +39,8 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
    - Check and Save the Schematic
       - Go to Check and Save.
       - If there are errors, recheck the connections and correct them.
-      - Once error-free, your schematic design is complete.
+      - Once error-free, your schematic design is complete.<br>
+      
 **Ste   4:** Running Spectre Simulation
   - Launch ADE (Analog Design Environment)
     - Go to Launch → ADE L.
