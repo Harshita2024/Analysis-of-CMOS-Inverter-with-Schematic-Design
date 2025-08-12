@@ -41,7 +41,7 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
       - If there are errors, recheck the connections and correct them.
       - Once error-free, your schematic design is complete.<br>
       
-**Ste   4:** Running Spectre Simulation
+**Step 4:** Running Spectre Simulation
   - Launch ADE (Analog Design Environment)
     - Go to Launch → ADE L.
   - Setup Model Libraries
@@ -60,7 +60,45 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
   - Run Simulation
     - Simulation → Netlist and Run.
     - If the waveform appears, the setup is correct.
-    - If not, recheck steps starting from Step 4.
+    - If not, recheck steps starting from Step 4.<br>
+    
+**Step 5:** Adding Design Variables
+  - Add Variable in Circuit
+    - Example: Create a variable named Vin for input voltage.
+  - Configure in ADE L
+    - In ADE L, go to Variables → Edit.
+    - In Name, enter the variable name (Vin).
+    - Assign a default value.
+    - Click Add to add Vin as a design variable.
+    - Click Apply → OK.<br>
+    
+**Step 6:**  Creating a Symbol for the Schematic     
+  - Assign Pins
+    - Apply input, output, or inout pins to the required schematic nodes.
+    - Example: An inverter with top pin as Vdd, left pin as in, right pin as out, and bottom pin as gnd.
+  - Create Symbol from Schematic
+    - Create → Cellview → From Cellview.
+    - Select the library name and give the same cell name.
+    - From View Name: schematic.
+    - To View Name: symbol.
+    - Click Apply → OK.
+  - Pin Placement
+    - Place Vdd at the top, in at the left, out at the right, and gnd at the bottom.
+    - Click Apply → OK.
+  - Symbol Editing
+    - A rectangular box with all pins will appear.
+    - Name the symbol using [@partname] (e.g., inverter).
+    - Modify the box and shape as needed using toolbar shapes.
+ **Step 7:**  Parametric Analysis
+  When the input is a variable (e.g., Vin), parametric analysis is required.     
+  - Open Parametric Analysis Tool
+    - In ADE L: Tools → Parametric Analysis.
+  - Configure Parameters
+    - Select the variable from the list in Add Variable.
+       - Note: Temperature is available by default as a design variable.
+    - Enter values for Start Point, End Point, and Step Value.
+    - Click the green Run button to start the simulation.
+   
 
 
 
