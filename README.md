@@ -25,7 +25,21 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
     - Go to Cell View → select the library you just created.
     - Enter a Cell Name (e.g., inverter).
     - Click OK.
- - Note: Always select your own library when creating a new cell view
+  - Draw the Schematic
+    -  Add Instances
+      - pMOS and nMOS: Select pmos_18 and nmos_18 from ts018_scl_prim library.
+      - VDD and GND: Select from analogLib library.
+    -  Add Wires
+      -  Use Create → Wire to connect the components properly.
+    -  Add Pins
+      - For schematics, only input and output pin types are used.
+      - Create input pin with direction "input".
+      - Create output pin with direction "output".
+      - InputOutput type is mainly required for supply changes and layout design.
+   - Check and Save the Schematic
+      - Go to Check and Save.
+      - If there are errors, recheck the connections and correct them.
+      - Once error-free, your schematic design is complete.
 
 
 
