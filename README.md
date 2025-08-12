@@ -57,7 +57,7 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
   - Select Signals to Plot
     - Go to Outputs → To Be Plotted → Select On Schematic.
     - Choose a node for current and a net for voltage.
-  -  Run Simulation
+  - Run Simulation
     - Simulation → Netlist and Run.
     - If the waveform appears, the setup is correct.
     - If not, recheck steps starting from Step 4.
