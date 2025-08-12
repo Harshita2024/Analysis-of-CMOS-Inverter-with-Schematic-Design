@@ -88,7 +88,8 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
   - Symbol Editing
     - A rectangular box with all pins will appear.
     - Name the symbol using [@partname] (e.g., inverter).
-    - Modify the box and shape as needed using toolbar shapes.
+    - Modify the box and shape as needed using toolbar shapes.<br>
+    
  **Step 7:**  Parametric Analysis
   When the input is a variable (e.g., Vin), parametric analysis is required.     
   - Open Parametric Analysis Tool
