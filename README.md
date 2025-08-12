@@ -40,6 +40,29 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
       - Go to Check and Save.
       - If there are errors, recheck the connections and correct them.
       - Once error-free, your schematic design is complete.
+**Ste   4:** Running Spectre Simulation
+  - Launch ADE (Analog Design Environment)
+    - Go to Launch → ADE L.
+  - Setup Model Libraries
+    - Setup → Model Libraries → scl_pdk → design kit-models-hspice → ts18sl_scl_mat.lib
+    - In Section, select tt_18.
+  - Stimuli (Defining Input Signals)
+    - Setup → Stimuli → OK.
+    - Ensure the Enabled checkbox is selected before clicking OK or Apply, otherwise your settings will be lost.
+  - Choose Analysis Type
+    - Select Transient Analysis or DC Analysis as per requirement.
+    - Set Stop Time for simulation duration.
+    - Check Enabled and click Apply → OK.
+  - Select Signals to Plot
+    - Go to Outputs → To Be Plotted → Select On Schematic.
+    - Choose a node for current and a net for voltage.
+  -  Run Simulation
+    - Simulation → Netlist and Run.
+    - If the waveform appears, the setup is correct.
+    - If not, recheck steps starting from Step 4.
+
+
+
 
 
 
