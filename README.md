@@ -12,13 +12,13 @@ From a VLSI perspective, the CMOS inverter is often treated as a benchmark cell 
  **Step 1:** Invoking the Tool
   - Open the terminal and run the following commands to start Cadence Virtuoso:
   - csh-> cd cds_working-> source cshrc.cadence-> virtuoso<br>
- **Step 2:** Creating a Library
+**Step 2:** Creating a Library
   - In the Virtuoso window, go to File → New → Library.
   - In the dialog box, enter a suitable Library Name (e.g., CMOS_Inverter).
   - Select Attach to an existing technology library option.
   - From the list, choose ts018_scl_prim as the technology library.
   - Click OK to create and attach your new library.<br>
- **Step 3:** Creating the Schematic
+**Step 3:** Creating the Schematic
   - Create a Cell View
     - Go to Cell View → select the library you just created.
     - Enter a Cell Name (e.g., inverter).
